@@ -5,6 +5,7 @@ import { IconSettings, IconUser, IconBell, IconLock, IconPalette } from '@tabler
 import { useState } from 'react';
 import toast from 'react-hot-toast';
 
+export default function SettingsPage() {
   const [activeTab, setActiveTab] = useState('Security');
   const [emailNotifs, setEmailNotifs] = useState(true);
   const [oldPassword, setOldPassword] = useState('');
