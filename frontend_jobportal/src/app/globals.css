@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-card: var(--bg-card);
+  --color-bg-glass: var(--bg-glass);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-brand-color: var(--brand);
+  --color-brand-light: var(--brand-light);
+  --color-brand-medium: var(--brand-medium);
+  --color-border: var(--border);
+  --color-border-glass: var(--border-glass);
+}
+
+@layer base {
+  :root {
+    --bg-primary: #f8faff;
+    --bg-secondary: #f1f5ff;
+    --bg-card: #ffffff;
+    --bg-glass: rgba(255,255,255,0.7);
+    --text-primary: #0f172a;
+    --text-secondary: #64748b;
+    --text-muted: #94a3b8;
+    --brand: #4f46e5;
+    --brand-light: rgba(79,70,229,0.08);
+    --brand-medium: rgba(79,70,229,0.15);
+    --border: #e2e8f0;
+    --border-glass: rgba(255,255,255,0.4);
+    --shadow-md: 0 8px 30px rgba(0,0,0,0.08);
+    --shadow-glass: 0 8px 32px rgba(79,70,229,0.1);
+    --sidebar-bg: #0f172a;
+  }
+
+  [data-theme="dark"] {
+    --bg-primary: #0b0f1a;
+    --bg-secondary: #111827;
+    --bg-card: #1e293b;
+    --bg-glass: rgba(30,41,59,0.8);
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --brand: #6366f1;
+    --brand-light: rgba(99,102,241,0.12);
+    --brand-medium: rgba(99,102,241,0.2);
+    --border: #334155;
+    --border-glass: rgba(255,255,255,0.08);
+    --shadow-md: 0 8px 30px rgba(0,0,0,0.4);
+    --shadow-glass: 0 8px 32px rgba(99,102,241,0.15);
+    --sidebar-bg: #0f172a;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: var(--bg-glass);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-glass);
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+  }
+
+  .gradient-bg {
+    background: linear-gradient(135deg, #f8faff 0%, #eef2ff 50%, #faf5ff 100%);
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  [data-theme="dark"] .gradient-bg {
+    background: linear-gradient(135deg, #0b0f1a 0%, #111827 50%, #0f0f1a 100%);
+  }
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--brand-medium);
+  border-radius: 4px;
+}
