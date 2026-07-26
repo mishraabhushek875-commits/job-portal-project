@@ -1,0 +1,1277 @@
+[
+  {
+    "category": "Arrays & Strings",
+    "questions": [
+      {
+        "title": "Arrays & Strings Problem 1",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 2",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 3",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 4",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 5",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 6",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 7",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 8",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 9",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 10",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 11",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 12",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 13",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 14",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 15",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 16",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 17",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 18",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 19",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 20",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 21",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 22",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 23",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 24",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 25",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 26",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 27",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 28",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 29",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 30",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 31",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 32",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 33",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 34",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 35",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 36",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 37",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 38",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 39",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 40",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 41",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 42",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 43",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 44",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 45",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 46",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 47",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 48",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 49",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Arrays & Strings Problem 50",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      }
+    ]
+  },
+  {
+    "category": "Linked Lists",
+    "questions": [
+      {
+        "title": "Linked Lists Problem 1",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 2",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 3",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 4",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 5",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 6",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 7",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 8",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 9",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 10",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 11",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 12",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 13",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 14",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 15",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 16",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 17",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 18",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 19",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 20",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 21",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 22",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 23",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 24",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 25",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 26",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 27",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 28",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 29",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 30",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 31",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 32",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 33",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 34",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 35",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 36",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 37",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 38",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 39",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 40",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 41",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 42",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 43",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 44",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 45",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 46",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 47",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 48",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 49",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Linked Lists Problem 50",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      }
+    ]
+  },
+  {
+    "category": "Trees & Graphs",
+    "questions": [
+      {
+        "title": "Trees & Graphs Problem 1",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 2",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 3",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 4",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 5",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 6",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 7",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 8",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 9",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 10",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 11",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 12",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 13",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 14",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 15",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 16",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 17",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 18",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 19",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 20",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 21",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 22",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 23",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 24",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 25",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 26",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 27",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 28",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 29",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 30",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 31",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 32",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 33",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 34",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 35",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 36",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 37",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 38",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 39",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 40",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 41",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 42",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 43",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 44",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 45",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 46",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 47",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 48",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 49",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Trees & Graphs Problem 50",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      }
+    ]
+  },
+  {
+    "category": "Dynamic Programming",
+    "questions": [
+      {
+        "title": "Dynamic Programming Problem 1",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 2",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 3",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 4",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 5",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 6",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 7",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 8",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 9",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 10",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 11",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 12",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 13",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 14",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 15",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 16",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 17",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 18",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 19",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 20",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 21",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 22",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 23",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 24",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 25",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 26",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 27",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 28",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 29",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 30",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 31",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 32",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 33",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 34",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 35",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 36",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 37",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 38",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 39",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 40",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 41",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 42",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 43",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 44",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 45",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 46",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 47",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 48",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 49",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Dynamic Programming Problem 50",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      }
+    ]
+  },
+  {
+    "category": "Math & Geometry",
+    "questions": [
+      {
+        "title": "Math & Geometry Problem 1",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 2",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 3",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 4",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 5",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 6",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 7",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 8",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 9",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 10",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 11",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 12",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 13",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 14",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 15",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 16",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 17",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 18",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 19",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 20",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 21",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 22",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 23",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 24",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 25",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 26",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 27",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 28",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 29",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 30",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 31",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 32",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 33",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 34",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 35",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 36",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 37",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 38",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 39",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 40",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 41",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 42",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 43",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 44",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 45",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 46",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 47",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 48",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 49",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      },
+      {
+        "title": "Math & Geometry Problem 50",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problemset/all/"
+      }
+    ]
+  }
+]
