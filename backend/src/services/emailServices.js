@@ -40,6 +40,7 @@ const sendEmail = async (to, subject, html) => {
     console.log(`Email sent to: ${to}`);
   } catch (error) {
     console.error(`Email error: ${error.message}`);
+    throw new Error(`Email bhejne me error aayi: ${error.message}`);
   }
 };
 
