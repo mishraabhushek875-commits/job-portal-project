@@ -32,16 +32,35 @@ transporter.verify((error, success) => {
   }
 });
 
-// ─── Base Email Bhejne Ka Function ───
+// ─── Base Email Bhejne Ka Function (via Brevo API) ───
 const sendEmail = async (to, subject, html) => {
   try {
-    await transporter.sendMail({
-      from: `"Job Portal" <${process.env.EMAIL_USER}>`,
-      to,
-      subject,
-      html,
+    const brevoApiKey = process.env.BREVO_API_KEY;
+    if (!brevoApiKey) {
+      throw new Error("BREVO_API_KEY is missing in .env file. Please add it to Render dashboard too.");
+    }
+
+    const response = await fetch('https://api.brevo.com/v3/smtp/email', {
+      method: 'POST',
+      headers: {
+        'api-key': brevoApiKey,
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        sender: { name: "Job Portal", email: process.env.EMAIL_USER || "noreply@jobportal.com" },
+        to: [{ email: to }],
+        subject: subject,
+        htmlContent: html
+      })
     });
-    console.log(`Email sent to: ${to}`);
+
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(`Brevo API Error: ${JSON.stringify(errorData)}`);
+    }
+
+    console.log(`Email sent to: ${to} via Brevo API`);
   } catch (error) {
     console.error(`Email error: ${error.message}`);
     throw new Error(`Email bhejne me error aayi: ${error.message}`);
