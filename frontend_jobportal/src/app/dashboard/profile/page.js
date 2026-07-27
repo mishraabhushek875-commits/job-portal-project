@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import {
   IconEdit, IconCheck, IconX, IconUpload,
   IconDownload, IconBriefcase, IconMail,
@@ -179,8 +180,8 @@ async function saveProfile() {
               style={{ background: 'linear-gradient(135deg, #4f46e5, #7c3aed)' }}
             >
               {user?.photo?.url ? (
-                <img src={user.photo.url} alt="photo"
-                  className="w-full h-full object-cover" />
+                <Image src={user.photo.url} alt="photo"
+                  width={80} height={80} className="w-full h-full object-cover" />
               ) : (
                 user?.name?.charAt(0)?.toUpperCase() || 'U'
               )}
@@ -479,8 +480,8 @@ async function saveProfile() {
             <div className="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0"
               style={{ background: 'linear-gradient(135deg, #4f46e5, #7c3aed)' }}>
               {user?.photo?.url ? (
-                <img src={user.photo.url} alt="profile"
-                  className="w-full h-full object-cover" />
+                <Image src={user.photo.url} alt="profile"
+                  width={80} height={80} className="w-full h-full object-cover" />
               ) : (
                 <div className="w-full h-full flex items-center justify-center text-white text-3xl font-bold">
                   {user?.name?.charAt(0)?.toUpperCase()}

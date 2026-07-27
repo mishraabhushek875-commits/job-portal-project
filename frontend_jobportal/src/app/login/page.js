@@ -9,6 +9,7 @@ import toast from 'react-hot-toast';
 import Link from 'next/link';
 import { Mail, Lock, X } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 // ─────────────────────────────────────────────────────────────
 // ANIMATED BACKGROUND (Fireflies / Bubbles for Left Banner)
@@ -247,7 +248,7 @@ export default function LoginPage() {
           </div>
 
           <button className="w-full flex items-center justify-center gap-3 bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 font-medium py-3 rounded-xl transition-all">
-            <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" className="w-5 h-5" />
+            <Image src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" width={20} height={20} className="w-5 h-5" />
             Google
           </button>
 

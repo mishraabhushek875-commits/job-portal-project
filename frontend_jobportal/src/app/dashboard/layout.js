@@ -11,7 +11,9 @@ import { useRouter, usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import Sidebar from '../../components/Sidebar';
 import Navbar from '../../components/Navbar';
-import ChatBot from '../../components/chatBot';
+import dynamic from 'next/dynamic';
+
+const ChatBot = dynamic(() => import('../../components/chatBot'), { ssr: false });
 
 export default function DashboardLayout({ children }) {
   const { isLoggedIn } = useSelector(state => state.auth);
