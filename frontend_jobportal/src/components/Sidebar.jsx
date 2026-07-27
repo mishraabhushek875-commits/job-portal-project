@@ -16,7 +16,7 @@ import socket from '../socket/socket';
 // Jobseeker items
 const jobseekerNavItems = [
   { icon: Home, label: 'Home', path: '/dashboard' },
-  { icon: Briefcase, label: 'Jobs', path: '/dashboard/jobs', badge: 5 },
+  { icon: Briefcase, label: 'Jobs', path: '/dashboard/jobs' },
   { icon: FileText, label: 'My Applications', path: '/dashboard/applications' },
   { icon: User, label: 'Profile', path: '/dashboard/profile' },
 ];

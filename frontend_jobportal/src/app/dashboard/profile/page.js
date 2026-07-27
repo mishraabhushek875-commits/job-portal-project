@@ -328,10 +328,10 @@ async function saveProfile() {
           </h2>
           <div className="grid grid-cols-2 gap-3">
             {[
-              { label: 'Profile Views', value: '89', color: '#4f46e5', bg: '#eef2ff' },
-              { label: 'Applications', value: '12', color: '#065f46', bg: '#d1fae5' },
-              { label: 'Shortlisted', value: '4', color: '#b45309', bg: '#fef3c7' },
-              { label: 'Interviews', value: '2', color: '#7c3aed', bg: '#ede9fe' },
+              { label: 'Profile Views', value: '0', color: '#4f46e5', bg: '#eef2ff' },
+              { label: 'Applications', value: '0', color: '#065f46', bg: '#d1fae5' },
+              { label: 'Shortlisted', value: '0', color: '#b45309', bg: '#fef3c7' },
+              { label: 'Interviews', value: '0', color: '#7c3aed', bg: '#ede9fe' },
             ].map((stat, i) => (
               <div key={i} className="rounded-xl p-3"
                 style={{ background: stat.bg }}>

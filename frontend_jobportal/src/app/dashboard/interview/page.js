@@ -176,7 +176,7 @@ function MessageBubble({ msg }) {
     >
       {/* Avatar */}
       <div className={`w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5 ${
-        isUser ? 'bg-blue-600' : 'bg-bg-card dark:bg-slate-700'
+        isUser ? 'bg-blue-600' : 'bg-white border border-slate-200 shadow-sm'
       }`}>
         {isUser
           ? <IconUser  size={15} className="text-white"    />
@@ -190,7 +190,7 @@ function MessageBubble({ msg }) {
         <div className={`px-4 py-3 rounded-2xl text-sm ${
           isUser
             ? 'bg-blue-600 text-white rounded-tr-sm'
-            : 'bg-bg-card dark:bg-slate-800 text-text-primary border border-border-glass rounded-tl-sm'
+            : 'bg-white text-slate-800 border border-slate-200 rounded-tl-sm shadow-sm'
         }`}>
           {isUser
             ? <p className="leading-relaxed">{msg.content}</p>
@@ -227,10 +227,10 @@ function MessageBubble({ msg }) {
 function TypingDots() {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex gap-3">
-      <div className="w-8 h-8 rounded-xl bg-bg-card dark:bg-slate-700 flex items-center justify-center">
+      <div className="w-8 h-8 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-center">
         <IconRobot size={15} className="text-blue-600" />
       </div>
-      <div className="px-4 py-3 rounded-2xl bg-bg-card dark:bg-slate-800 border border-border-glass rounded-tl-sm">
+      <div className="px-4 py-3 rounded-2xl bg-white border border-slate-200 shadow-sm rounded-tl-sm">
         <div className="flex gap-1 items-center h-4">
           {[0, 1, 2].map(i => (
             <motion.div
