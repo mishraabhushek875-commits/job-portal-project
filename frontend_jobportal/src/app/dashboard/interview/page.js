@@ -54,9 +54,9 @@ function renderMarkdown(text) {
     }
     if (inCode) { codeBlock.push(line); continue; }
 
-    if (line.startsWith('### ')) { elements.push(<p key={key++} className="font-bold text-text-primary text-sm mt-3 mb-1">{inlineFormat(line.slice(4))}</p>); continue; }
-    if (line.startsWith('## '))  { elements.push(<p key={key++} className="font-bold text-text-primary text-base mt-3 mb-1">{inlineFormat(line.slice(3))}</p>); continue; }
-    if (line.startsWith('# '))   { elements.push(<p key={key++} className="font-bold text-text-primary text-lg mt-3 mb-1">{inlineFormat(line.slice(2))}</p>); continue; }
+    if (line.startsWith('### ')) { elements.push(<p key={key++} className="font-bold text-sm mt-3 mb-1">{inlineFormat(line.slice(4))}</p>); continue; }
+    if (line.startsWith('## '))  { elements.push(<p key={key++} className="font-bold text-base mt-3 mb-1">{inlineFormat(line.slice(3))}</p>); continue; }
+    if (line.startsWith('# '))   { elements.push(<p key={key++} className="font-bold text-lg mt-3 mb-1">{inlineFormat(line.slice(2))}</p>); continue; }
 
     if (line.match(/^[\-\*] /)) {
       elements.push(
@@ -92,7 +92,7 @@ function inlineFormat(text) {
   while ((match = regex.exec(text)) !== null) {
     if (match.index > last) parts.push(text.slice(last, match.index));
     const raw = match[0];
-    if (raw.startsWith('**'))     parts.push(<strong key={idx++} className="font-semibold text-text-primary">{raw.slice(2, -2)}</strong>);
+    if (raw.startsWith('**'))     parts.push(<strong key={idx++} className="font-semibold">{raw.slice(2, -2)}</strong>);
     else if (raw.startsWith('`')) parts.push(<code key={idx++} className="bg-slate-100 text-blue-600 px-1 py-0.5 rounded text-xs font-mono">{raw.slice(1, -1)}</code>);
     else if (raw.startsWith('*')) parts.push(<em key={idx++} className="italic">{raw.slice(1, -1)}</em>);
     last = match.index + raw.length;
