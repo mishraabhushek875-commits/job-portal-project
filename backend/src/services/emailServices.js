@@ -9,9 +9,8 @@ console.log("EMAIL_PASS:", process.env.EMAIL_PASS);
 console.log("PASS LENGTH:", process.env.EMAIL_PASS?.length);
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
-  port: 587,
-  secure: false, // true for 465, false for other ports
-  requireTLS: true,
+  port: 465,
+  secure: true, // true for 465, false for other ports
   family: 4, // 👈 FORCES IPv4 (Fixes ENETUNREACH error on Render)
   auth: {
     user: process.env.EMAIL_USER,
