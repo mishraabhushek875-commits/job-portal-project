@@ -1,7 +1,10 @@
 import dotenv from "dotenv";
 dotenv.config();
 import nodemailer from 'nodemailer';
+import dns from 'dns';
 
+// Fix for Render IPv6 ENETUNREACH error: Globally force DNS to resolve IPv4 first
+dns.setDefaultResultOrder('ipv4first');
 
 // ─── Transporter banao — Gmail se connect ───
 console.log("EMAIL_USER:", process.env.EMAIL_USER);
