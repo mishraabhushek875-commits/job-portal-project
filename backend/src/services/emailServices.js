@@ -14,7 +14,8 @@ const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 465,
   secure: true, // true for 465, false for other ports
-  family: 4, // 👈 FORCES IPv4 (Fixes ENETUNREACH error on Render)
+  family: 4, // 👈 FORCES IPv4
+  localAddress: '0.0.0.0', // 👈 FORCES IPv4 socket, fixes (:::0) Local binding error on Render
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
