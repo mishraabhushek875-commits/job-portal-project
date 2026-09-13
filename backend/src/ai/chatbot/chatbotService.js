@@ -64,17 +64,20 @@ User: "how do I write a good resume" -> {"type": "general_question", "keyword": 
 User: "any python openings in bangalore" -> {"type": "job_search", "keyword": "python", "location": "bangalore"}`;
 
     const response = await groq.chat.completions.create({
-      model: 'llama-3.1-8b-instant',
+      model: 'openai/gpt-oss-20b',
       messages: [
         { role: 'system', content: systemPrompt },
         { role: 'user', content: message },
       ],
       temperature: 0,
-      max_tokens: 100,
+      max_tokens: 300,
+      reasoning_effort: 'low',
     });
 
-    const raw = response.choices[0].message.content.trim();
-    return JSON.parse(raw);
+    
+     const raw = response.choices[0].message.content.trim();
+      if (!raw) throw new Error('Empty response from model');
+       return JSON.parse(raw);
   } catch (err) {
     console.error('AI intent detection failed, falling back:', err.message);
     return detectIntent(message); // purana keyword-based fallback
@@ -133,15 +136,18 @@ Tera kaam: job seekers ki madad karna.
 - Kabhi rude mat hona`;
 
   const response = await groq.chat.completions.create({
-    model: 'llama-3.1-8b-instant',
+    model: 'openai/gpt-oss-20b',
     messages: [
       { role: 'system', content: systemPrompt },
       ...recentHistory,
       { role: 'user', content: userMessage },
     ],
-    max_tokens: 500,
-    temperature: 0.7,
+   max_tokens: 800,
+    temperature: 0.7, 
+    reasoning_effort: 'low',
   });
+
+  const content = response.choices[0].message.content; if (!content) throw new Error('Empty response from AI');
 
   return response.choices[0].message.content;
 }
@@ -152,6 +158,7 @@ async function processMessage(userMessage, chatHistory = []) {
 
 
   const intent = await detectIntentWithAI(userMessage);//Ai-based llm intent detection, fallback to keyword-based if AI fails
+  console.log('🤖 Intent detected:', intent);
   
   let replyText = '';
   let foundJobs = [];

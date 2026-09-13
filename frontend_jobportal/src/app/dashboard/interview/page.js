@@ -36,12 +36,49 @@ function renderMarkdown(text) {
   const elements = [];
   let codeBlock = [];
   let inCode = false;
+  let tableRows = [];
+  let inTable = false;
   let key = 0;
+
+  const flushTable = () => {
+    if (tableRows.length === 0) return;
+    const [headerRow, , ...bodyRows] = tableRows;
+    const headers = headerRow.split('|').map(s => s.trim()).filter(Boolean);
+    elements.push(
+      <div key={key++} className="overflow-x-auto my-2 rounded-xl border border-slate-200">
+        <table className="w-full text-xs border-collapse">
+          <thead>
+            <tr className="bg-blue-50">
+              {headers.map((h, i) => (
+                <th key={i} className="px-3 py-2 text-left font-semibold text-blue-700 border-b border-slate-200 whitespace-nowrap">{inlineFormat(h)}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {bodyRows.map((row, ri) => {
+              const cells = row.split('|').map(s => s.trim()).filter(Boolean);
+              return (
+                <tr key={ri} className={ri % 2 === 0 ? 'bg-white' : 'bg-slate-50'}>
+                  {cells.map((cell, ci) => (
+                    <td key={ci} className="px-3 py-2 border-b border-slate-100 text-slate-700">{inlineFormat(cell)}</td>
+                  ))}
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    );
+    tableRows = [];
+    inTable = false;
+  };
 
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
 
+    // Code block
     if (line.trim().startsWith('```')) {
+      if (inTable) flushTable();
       if (inCode) {
         elements.push(
           <pre key={key++} className="bg-slate-800 text-emerald-300 rounded-xl p-3 my-2 overflow-x-auto text-xs font-mono leading-relaxed">
@@ -53,6 +90,21 @@ function renderMarkdown(text) {
       continue;
     }
     if (inCode) { codeBlock.push(line); continue; }
+
+    // Table detection — line that starts and ends with |
+    const trimmed = line.trim();
+    if (trimmed.startsWith('|') && trimmed.endsWith('|')) {
+      // Check if separator row (|---|---|)
+      if (/^\|[\s\-|:]+\|$/.test(trimmed)) {
+        tableRows.push(trimmed); // keep separator to align header/body
+        continue;
+      }
+      tableRows.push(trimmed);
+      inTable = true;
+      continue;
+    } else if (inTable) {
+      flushTable();
+    }
 
     if (line.startsWith('### ')) { elements.push(<p key={key++} className="font-bold text-sm mt-3 mb-1">{inlineFormat(line.slice(4))}</p>); continue; }
     if (line.startsWith('## '))  { elements.push(<p key={key++} className="font-bold text-base mt-3 mb-1">{inlineFormat(line.slice(3))}</p>); continue; }
@@ -81,6 +133,8 @@ function renderMarkdown(text) {
     if (line.trim() === '') { elements.push(<div key={key++} className="h-1" />); continue; }
     elements.push(<p key={key++} className="my-0.5 leading-relaxed">{inlineFormat(line)}</p>);
   }
+
+  if (inTable) flushTable();
 
   return <div className="text-sm space-y-0.5">{elements}</div>;
 }
