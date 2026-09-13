@@ -38,9 +38,15 @@ export const interviewChat = async (req, res) => {
 
     res.json({ success: true, reply });
 
-  } catch (err) {
-    console.error('Interview chat error:', err.message);
-    res.status(500).json({ message: 'AI abhi busy hai, dobara try karo' });
+  } catch (error) {
+    console.error("INTERVIEW API ERROR:", error);
+    console.error("ERROR MESSAGE:", error.message);
+    console.error("ERROR STACK:", error.stack);
+
+    return res.status(500).json({
+      success: false,
+      message: error.message,
+    });
   }
 };
 

@@ -74,7 +74,7 @@ export default function HackathonPage() {
           <h1 className="text-xl font-bold text-text-primary">Hackathons</h1>
           <p className="text-sm mt-0.5 text-text-secondary">Competitions join karo — skills dikhao</p>
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-2 flex-wrap">
           {['all', 'open', 'upcoming'].map(f => (
             <button
               key={f}

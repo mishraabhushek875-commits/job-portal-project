@@ -29,6 +29,12 @@ const JOB_ROLES = [
   'ui/ux', 'graphic designer', 'php', 'django', 'spring', 'react',
 ];
 
+
+
+/*
+. JOB_SEARCH_KEYWORDS, CITIES, JOB_ROLES arrays + detectIntent() — Ye AI nahi hai, ye plain keyword matching hai (msg.includes('job') type). Concept: iska naam "Intent Detection" hai — pehle decide karna ki user kya chahta hai (job dhoondh raha hai ya general baat kar raha hai), taaki app decide kare aage kya karna hai. Abhi ye rule-based hai (hardcoded lists), LLM use nahi ho raha.
+*/
+
 function detectIntent(message) {
   const msg = message.toLowerCase();
   const isJobSearch = JOB_SEARCH_KEYWORDS.some(kw => msg.includes(kw));
@@ -39,6 +45,44 @@ function detectIntent(message) {
   const location = CITIES.find(city => msg.includes(city)) || '';
   return { type: 'job_search', keyword, location };
 }
+
+
+
+// ─── AI-based Intent Detection ───
+async function detectIntentWithAI(message) {
+  try {
+    const groq = getGroqClient();
+
+    const systemPrompt = `Extract job search intent from the user message.
+Always reply ONLY in this JSON format:
+{"type": "job_search" or "general_question", "keyword": "", "location": ""}
+No extra text outside JSON.
+
+Examples:
+User: "show me react jobs in pune" -> {"type": "job_search", "keyword": "react", "location": "pune"}
+User: "how do I write a good resume" -> {"type": "general_question", "keyword": "", "location": ""}
+User: "any python openings in bangalore" -> {"type": "job_search", "keyword": "python", "location": "bangalore"}`;
+
+    const response = await groq.chat.completions.create({
+      model: 'llama-3.1-8b-instant',
+      messages: [
+        { role: 'system', content: systemPrompt },
+        { role: 'user', content: message },
+      ],
+      temperature: 0,
+      max_tokens: 100,
+    });
+
+    const raw = response.choices[0].message.content.trim();
+    return JSON.parse(raw);
+  } catch (err) {
+    console.error('AI intent detection failed, falling back:', err.message);
+    return detectIntent(message); // purana keyword-based fallback
+  }
+}
+
+/*3. findJobsFromDB() — Normal MongoDB regex search hai. Ye bhi AI nahi hai — plain database query. (Interesting fact: yehi jagah hai jahan RAG (jo hum Day 9-10 me seekhenge) upgrade karega — abhi regex match hai, RAG se semantic search hoga, matlab "React developer" search karne pe "Frontend Engineer" bhi mil jayega, chahe exact word match na ho.)
+*/
 
 // ─── Database Search ───
 async function findJobsFromDB(keyword, location) {
@@ -59,6 +103,16 @@ async function findJobsFromDB(keyword, location) {
     .limit(5);
   return jobs;
 }
+
+
+
+/*4. getAIReply() — Yahan asli LLM use ho raha hai:
+
+systemPrompt — JobBot ka persona define ho raha hai (Day 2-3 wala concept — role, tone, constraints "Hinglish", "3-4 lines", "kabhi rude mat hona").
+
+chatHistory.slice(-6) — Ye Day 1 ka context window concept hai practically implement hua! Sirf last 6 messages bhejta hai, poori history nahi — taaki context window overflow na ho aur cost bhi control me rahe.
+
+temperature: 0.7 — Day 1 wala concept, thoda creative but zyada random nahi.*/
 
 // ─── Groq AI Reply ───
 async function getAIReply(userMessage, chatHistory) {
@@ -94,7 +148,11 @@ Tera kaam: job seekers ki madad karna.
 
 // ─── Main Function ───
 async function processMessage(userMessage, chatHistory = []) {
-  const intent = detectIntent(userMessage);
+  /*const intent = detectIntent(userMessage);*/
+
+
+  const intent = await detectIntentWithAI(userMessage);//Ai-based llm intent detection, fallback to keyword-based if AI fails
+  
   let replyText = '';
   let foundJobs = [];
 
@@ -121,3 +179,9 @@ async function processMessage(userMessage, chatHistory = []) {
 }
 
 export { processMessage };
+
+/*. processMessage() — Orchestrator hai — detectIntent() ke result ke hisab se decide karta hai: agar job search hai to DB query karo (AI nahi), agar general question hai to LLM call karo (getAIReply).
+
+
+6. Dusra file (getGroqModel) — Ye getGroqClient() jaisa hi hai, thoda duplicate lagta hai — shayad kisi aur file me use ho raha hoga alag purpose ke liye.
+*/

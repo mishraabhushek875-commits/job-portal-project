@@ -129,11 +129,11 @@ export default function Navbar() {
       {/* ─── Right ─── */}
       <div className="flex items-center gap-2">
 
-        {/* Search */}
+        {/* Search — hidden on mobile */}
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="w-9 h-9 rounded-xl flex items-center justify-center"
+          className="hidden sm:flex w-9 h-9 rounded-xl items-center justify-center"
           style={{
             background: 'rgba(79,70,229,0.08)',
             color: '#4f46e5',
@@ -169,7 +169,7 @@ export default function Navbar() {
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: -10, scale: 0.95 }}
                 transition={{ duration: 0.2 }}
-                className="absolute right-0 top-12 w-72 rounded-2xl p-4 z-50"
+                className="absolute right-0 top-12 w-72 max-w-[calc(100vw-2rem)] rounded-2xl p-4 z-50"
                 style={{
                   background: 'var(--bg-glass)',
                   backdropFilter: 'blur(20px)',
@@ -212,12 +212,12 @@ export default function Navbar() {
           </AnimatePresence>
         </div>
 
-        {/* Theme Toggle */}
+        {/* Theme Toggle — hidden on mobile */}
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => dispatch(toggleTheme())}
-          className="w-9 h-9 rounded-xl flex items-center justify-center"
+          className="hidden sm:flex w-9 h-9 rounded-xl items-center justify-center"
           style={{ background: 'rgba(79,70,229,0.08)', color: '#4f46e5' }}
         >
           <AnimatePresence mode="wait">
@@ -249,7 +249,7 @@ export default function Navbar() {
               style={{ background: '#4f46e5' }}>
               {user?.name?.charAt(0)?.toUpperCase() || 'U'}
             </div>
-            <span className="text-sm font-medium" style={{ color: 'var(--text-primary)' }}>
+            <span className="hidden sm:inline text-sm font-medium" style={{ color: 'var(--text-primary)' }}>
               {user?.name?.split(' ')[0] || 'User'}
             </span>
             <motion.div

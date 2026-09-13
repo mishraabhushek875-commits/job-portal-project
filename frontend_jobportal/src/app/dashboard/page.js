@@ -124,9 +124,9 @@ function JobseekerHome() {
                     px-6 py-8 pt-24">
 
       {/* ── HEADER ───────────────────────────────────── */}
-      <div className="flex justify-between items-center mb-8">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-8">
         <div>
-          <h1 className="font-display font-bold text-3xl tracking-tight">
+          <h1 className="font-display font-bold text-2xl md:text-3xl tracking-tight">
             Good morning,{" "}
             <span className="text-blue-400">Rahul</span> 👋
           </h1>
@@ -136,7 +136,7 @@ function JobseekerHome() {
         <div className="flex gap-3">
           <button
             onClick={() => router.push("/")}
-            className="border border-border hover:border-blue-500
+            className="flex-1 sm:flex-none border border-border hover:border-blue-500
                        text-text-secondary hover:text-blue-400 text-sm
                        px-4 py-2 rounded-xl transition-all duration-200"
           >
@@ -144,7 +144,7 @@ function JobseekerHome() {
           </button>
           <button
             onClick={() => router.push("/profile")}
-            className="bg-blue-600 hover:bg-blue-500 text-white
+            className="flex-1 sm:flex-none bg-blue-600 hover:bg-blue-500 text-white
                        text-sm px-4 py-2 rounded-xl font-semibold
                        transition-all duration-200 shadow-lg shadow-blue-600/30"
           >
@@ -154,7 +154,7 @@ function JobseekerHome() {
       </div>
 
       {/* ── STAT CARDS — 4 columns ───────────────────── */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-8">
         {[
           {
             icon: "📋",
@@ -192,18 +192,18 @@ function JobseekerHome() {
           <div
             key={i}
             className={`bg-bg-card border border-border border-b-4
-                        ${card.accent} rounded-2xl p-5
+                        ${card.accent} rounded-2xl p-4 md:p-5
                         hover:-translate-y-1 hover:shadow-xl
                         transition-all duration-300`}
           >
             {/* Icon box */}
-            <div className={`w-10 h-10 ${card.iconBg} rounded-xl
+            <div className={`w-9 h-9 md:w-10 md:h-10 ${card.iconBg} rounded-xl
                              flex items-center justify-center
-                             text-xl mb-4`}>
+                             text-lg md:text-xl mb-3 md:mb-4`}>
               {card.icon}
             </div>
             {/* Number */}
-            <div className="font-display font-extrabold text-3xl">
+            <div className="font-display font-extrabold text-2xl md:text-3xl">
               {card.number}
             </div>
             <div className="text-text-secondary text-xs mt-1">{card.label}</div>
@@ -264,9 +264,9 @@ function JobseekerHome() {
                   </div>
 
                   {/* Job info */}
-                  <div className="flex-1">
-                    <div className="font-medium text-sm">{title}</div>
-                    <div className="text-text-secondary text-xs">{company}</div>
+                  <div className="flex-1 min-w-0">
+                    <div className="font-medium text-sm truncate">{title}</div>
+                    <div className="text-text-secondary text-xs truncate">{company}</div>
                   </div>
 
                   {/* Status badge */}
@@ -352,7 +352,7 @@ function JobseekerHome() {
 
       {/* ── CHATBOT POPUP ─────────────────────────────── */}
       {chatOpen && (
-        <div className="fixed bottom-24 right-6 w-80 bg-bg-card
+        <div className="fixed bottom-24 right-4 left-4 sm:left-auto sm:right-6 sm:w-80 bg-bg-card
                         border border-border rounded-2xl shadow-2xl
                         z-40 overflow-hidden animate-slide-up">
 

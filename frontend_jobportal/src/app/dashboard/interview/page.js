@@ -347,7 +347,7 @@ export default function InterviewPage() {
   const canSend = input.trim().length > 0 && !loading;
 
   return (
-    <div className="max-w-3xl mx-auto flex flex-col" style={{ height: 'calc(100vh - 140px)' }}>
+    <div className="max-w-3xl mx-auto flex flex-col" style={{ height: 'calc(100dvh - 140px)', minHeight: '500px' }}>
 
       {/* ── Header ──────────────────────────────────── */}
       <div className="flex items-center justify-between mb-4">

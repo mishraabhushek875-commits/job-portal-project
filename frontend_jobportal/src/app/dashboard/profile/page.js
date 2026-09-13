@@ -199,7 +199,7 @@ async function saveProfile() {
           </div>
 
           {/* Info */}
-          <div className="flex-1">
+          <div className="flex-1 min-w-0">
             {editMode ? (
               <div className="space-y-2">
                 {[
@@ -229,7 +229,7 @@ async function saveProfile() {
               </div>
             ) : (
               <>
-                <h1 className="font-bold text-2xl" style={{ color: '#0f172a' }}>
+                <h1 className="font-bold text-2xl truncate" style={{ color: '#0f172a' }}>
                   {user?.name}
                 </h1>
                 <p className="text-sm mt-1 capitalize px-2 py-0.5 rounded-full inline-block"
@@ -237,17 +237,17 @@ async function saveProfile() {
                   {user?.role}
                 </p>
                 <div className="flex flex-wrap gap-4 mt-3">
-                  <span className="flex items-center gap-1 text-xs" style={{ color: '#94a3b8' }}>
-                    <IconMail size={12} /> {user?.email}
+                  <span className="flex items-center gap-1 text-xs min-w-0" style={{ color: '#94a3b8' }}>
+                    <IconMail size={12} className="flex-shrink-0" /> <span className="truncate">{user?.email}</span>
                   </span>
                   {user?.location && (
-                    <span className="flex items-center gap-1 text-xs" style={{ color: '#94a3b8' }}>
-                      <IconMapPin size={12} /> {user.location}
+                    <span className="flex items-center gap-1 text-xs min-w-0" style={{ color: '#94a3b8' }}>
+                      <IconMapPin size={12} className="flex-shrink-0" /> <span className="truncate">{user.location}</span>
                     </span>
                   )}
                   {user?.linkedin && (
-                    <span className="flex items-center gap-1 text-xs" style={{ color: '#94a3b8' }}>
-                      <IconLink size={12} /> {user.linkedin}
+                    <span className="flex items-center gap-1 text-xs min-w-0" style={{ color: '#94a3b8' }}>
+                      <IconLink size={12} className="flex-shrink-0" /> <span className="truncate">{user.linkedin}</span>
                     </span>
                   )}
                 </div>
@@ -256,7 +256,7 @@ async function saveProfile() {
           </div>
 
           {/* Buttons */}
-          <div className="flex gap-2 flex-shrink-0">
+          <div className="flex gap-2 flex-shrink-0 self-start md:self-auto">
             {editMode ? (
               <>
                 <motion.button

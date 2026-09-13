@@ -241,7 +241,7 @@ export default function JobsPage() {
 
   return (
     // ── Two-column layout: jobs left, AI sidebar right ──
-    <div className="flex gap-6 items-start">
+    <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 items-start">
 
       {/* ════════════════════════════════════════════════
           LEFT — Main jobs section

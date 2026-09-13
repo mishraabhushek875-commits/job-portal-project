@@ -181,14 +181,14 @@ export default function DSAPage() {
                           <motion.div
                             key={q.title}
                             whileHover={{ x: 3 }}
-                            className="flex items-center justify-between p-3 rounded-xl bg-slate-50/60 border border-border-glass"
+                            className="flex items-center justify-between p-3 rounded-xl bg-slate-50/60 border border-border-glass gap-2"
                           >
-                            <div className="flex items-center gap-3">
+                            <div className="flex items-center gap-3 min-w-0 flex-1">
                               {/* Checkbox */}
                               <button
                                 onClick={() => !loading && toggleSolved(topic.category, q.title)}
                                 disabled={loading}
-                                className={`w-7 h-7 rounded-lg flex items-center justify-center border transition-all duration-200 ${
+                                className={`w-7 h-7 flex-shrink-0 rounded-lg flex items-center justify-center border transition-all duration-200 ${
                                   q.solved
                                     ? 'bg-emerald-50 border-emerald-200'
                                     : 'bg-bg-card border-border hover:border-blue-300'
@@ -206,13 +206,13 @@ export default function DSAPage() {
                                 href={q.leetCodeUrl || '#'}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className={`text-sm hover:underline ${q.solved ? 'text-slate-400 line-through' : 'text-text-primary hover:text-blue-500'}`}
+                                className={`text-sm hover:underline truncate ${q.solved ? 'text-slate-400 line-through' : 'text-text-primary hover:text-blue-500'}`}
                               >
                                 {q.title}
                               </a>
                             </div>
 
-                            <span className={`text-xs px-2.5 py-1 rounded-full font-medium border ${diff.bg} ${diff.text} ${diff.border}`}>
+                            <span className={`text-xs px-2.5 py-1 rounded-full font-medium border flex-shrink-0 ${diff.bg} ${diff.text} ${diff.border}`}>
                               {q.difficulty}
                             </span>
                           </motion.div>

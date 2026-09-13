@@ -242,18 +242,18 @@ export default function ApplicationsPage() {
                 )}
               </div>
 
-              <div className="flex justify-end gap-3 p-4 border-t border-border bg-slate-50 dark:bg-slate-800/50">
-                <button onClick={() => setSelectedApp(null)} className="px-4 py-2 rounded-xl text-sm font-medium border border-border text-text-secondary hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors">
+              <div className="flex flex-col sm:flex-row sm:justify-end gap-2 sm:gap-3 p-4 border-t border-border bg-slate-50 dark:bg-slate-800/50">
+                <button onClick={() => setSelectedApp(null)} className="w-full sm:w-auto px-4 py-2 rounded-xl text-sm font-medium border border-border text-text-secondary hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors">
                   Close
                 </button>
                 {selectedApp.status === 'pending' && (
-                  <button onClick={() => handleWithdraw(selectedApp._id)} className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium bg-red-50 text-red-600 hover:bg-red-100 transition-colors">
+                  <button onClick={() => handleWithdraw(selectedApp._id)} className="w-full sm:w-auto flex items-center justify-center gap-2 px-4 py-2 rounded-xl text-sm font-medium bg-red-50 text-red-600 hover:bg-red-100 transition-colors">
                     <IconTrash size={16} /> Withdraw
                   </button>
                 )}
                 <button 
                   onClick={() => setChatData({ recipient: selectedApp.job?.recruiter || selectedApp.job?.postedBy, jobId: selectedApp.job?._id })} 
-                  className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium bg-brand-color text-white hover:bg-blue-600 transition-colors"
+                  className="w-full sm:w-auto flex items-center justify-center gap-2 px-4 py-2 rounded-xl text-sm font-medium bg-brand-color text-white hover:bg-blue-600 transition-colors"
                 >
                   <IconMessage size={16} /> Chat
                 </button>

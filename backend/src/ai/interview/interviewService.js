@@ -37,7 +37,7 @@ export async function getInterviewReply(userMessage, chatHistory = []) {
   // Groq API call
   const groq = getGroqClient();
   const response = await groq.chat.completions.create({
-    model: 'llama-3.1-8b-instant',   // fast + free model
+    model: 'openai/gpt-oss-20b',   // fast + free model
     messages: [
       // System prompt pehle
       { role: 'system', content: SYSTEM_PROMPT },
